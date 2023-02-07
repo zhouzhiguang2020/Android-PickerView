@@ -1,13 +1,7 @@
-## 注意⚠️：已停止更新，原有版本jcenter库可以继续使用。建议直接下载源码引入 module 到自己项目改造。
+## 注意⚠️：更新，原有版本jcenter库可以继续使用。建议直接下载源码引入 module 到自己项目改造。
 
 ## Android-PickerView
-[![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg)](https://android-arsenal.com/api?level=9) 
-[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Download](https://api.bintray.com/packages/contrarywind/maven/Android-PickerView/images/download.svg) ](https://bintray.com/contrarywind/maven/Android-PickerView/_latestVersion)
 
-[![GitHub stars](https://img.shields.io/github/stars/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/stargazers) [![GitHub forks](https://img.shields.io/github/forks/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/network) [![GitHub watchers](https://img.shields.io/github/watchers/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/watchers)
-
-### [English Document](https://github.com/Bigkoo/Android-PickerView/blob/master/README-en.md)
 
 ### 注意事项、详请使用方式、更新日志等，请查看 [Wiki文档](https://github.com/Bigkoo/Android-PickerView/wiki)
 **Wiki文档，Wiki文档，Wiki文档 !~ 重要的事情说三遍**
@@ -61,27 +55,6 @@
   startDate.set(2013,0,1);
   endDate.set(2020,11,1);
 
- #### V4.1.9 版本更新说明（2019-10-20）
-   - 修复: 农历 day 偶现越界的问题。
-   - 优化: 显示布局中英文默认大写问题。
-   - 新增: 最大可见项的数目提供API给开发者设置。(setItemVisibleCount())
-   - 新增: 滚轮从中间到两边透明度渐变，提供开关API设置。（isAlphaGradient(true)）
-   - 新增: 选中项圆形分割线样式。（DividerType.CIRCLE）
-
- #### V4.1.8 版本更新说明（2019-4-24）
- -  更新gradle版本， wheelview基础库由 compile 改为 api 依赖，避免gradle 5.0+版本无法引入。
- -  修复 setTextXOffset 赋值问题。
-  
- #### V4.1.7 版本更新说明（2019-1-10）
- -  修复 WheelView在初始化时，数据为空导致height=0，造成一直显示不出来的问题。
- -  新增取消按钮的点击事件监听入口。
- -  参数注解添加，规范数据类型。
- -  废弃setBackgroundId方法， 更新方法命名为 setOutSideColor。
-
-
-#### 更多历史版本详情，请查阅：[更新日志（4.x版本）](https://github.com/Bigkoo/Android-PickerView/wiki/更新日志（4.x版本）) 
-
-#### 方法名与参数请查阅：[方法名与参数说明文档](https://github.com/Bigkoo/Android-PickerView/wiki/%E6%96%B9%E6%B3%95%E5%90%8D%E4%B8%8E%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E%EF%BC%883.x%E7%89%88%E6%9C%AC%EF%BC%89)
 
 </br>
 
@@ -91,19 +64,9 @@
 
 #### 1.添加Jcenter仓库 Gradle依赖：
 ```java
-compile 'com.contrarywind:Android-PickerView:4.1.9'
+  implementation 'com.github.zhouzhiguang2020.Android-PickerView:pickerview:v1.0.0'
 ```
-或者
 
-#### Maven
-```
-<dependency>
-<groupId>com.contrarywind</groupId>
-<artifactId>Android-PickerView</artifactId>
-<version>4.1.9</version>
-<type>pom</type>
-</dependency>
-```
 
 #### 2.在项目中添加如下代码：
 
